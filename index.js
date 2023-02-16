@@ -27,8 +27,8 @@ if (!config.get("jwtPrivateKey")) {
   process.exit(1);
 }
 
-// process.env.PORT || 5000;
-let port = 3000;
+// 
+let port = process.env.PORT || 5000;
 
 app.listen(port, () => {
   // require("log-timestamp");
