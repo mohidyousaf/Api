@@ -1,0 +1,43 @@
+{
+  "name": "BaltiApp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./index.js"
+  },
+  "engines": {
+    "node": "16.15.1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1253.0",
+    "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
+    "config": "^3.2.2",
+    "connect-multiparty": "^2.2.0",
+    "consoleit": "^0.0.6",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.3",
+    "express": "~4.16.1",
+    "express-xml-bodyparser": "^0.3.0",
+    "gridfs-stream": "^1.1.1",
+    "helmet": "^3.21.0",
+    "http": "^0.0.1-security",
+    "http-errors": "~1.6.3",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "log-timestamp": "^0.3.0",
+    "loggly": "^1.1.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.13.7",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.4",
+    "multer-gridfs-storage": "^5.0.2",
+    "nodemon": "^2.0.20",
+    "winston": "^3.8.1",
+    "winston-loggly-bulk": "^3.2.1"
+  },
+  "author": "Mubeen Ul Haq"
+}

@@ -1,0 +1,8 @@
+{
+  "jwtPrivateKey": "asdf123098",
+  "dbUri": "mongodb+srv://node-pets:node-pets@petsapp-cluster.y1yhr.mongodb.net/PetsApp-Cluster?retryWrites=true&w=majority",
+  "email": "",
+  "password": "",
+  "Access Key ID": "AKIA4UFL5JK4ESWNME4K",
+  "Secret Access Key":"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"
+}

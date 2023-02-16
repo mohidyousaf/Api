@@ -1,0 +1,6 @@
+{
+  "jwtPrivateKey": "baltiApp_jwtPrivateKey",
+  "dbUri": "baltiApp_dbUri",
+  "email": "baltiApp_email",
+  "password": "baltiApp_password"
+}

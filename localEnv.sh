@@ -1,0 +1,5 @@
+export baltiApp_jwtPrivateKey="qwerty123"
+export baltiApp_dbUri="mongodb://localhost:27017/ecoChain"
+export baltiApp_email="support@organiccommunitymarket.com"
+export baltiApp_password="p@s\sword1234"
+export NODE_ENV="development"
