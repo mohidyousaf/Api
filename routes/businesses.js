@@ -43,8 +43,8 @@ router.post("/" , upload.array("img"),  async (req, res) => {
 
 // find business in Area
 router.post("/byArea", async (req, res) => {
-  let lat = req.body.lat;
-  let lang = req.body.lng;
+  let lat = parseFloat(req.body.lat);
+  let lang = parseFloat(req.body.lng);
 
   try {
     let businesses = await Businesses.find({
