@@ -33,7 +33,7 @@ router.post("/" , upload.array("img"),  async (req, res) => {
       latitude: parseFloat(body?.latitude),
       longitude: parseFloat(body?.longitude),
       location: {
-        "coordinates": [parseFloat(body?.latitude), parseFloat(body?.longitude)]
+        "coordinates": [parseFloat(body?.longitude), parseFloat(body?.latitude)]
       }
     });
     
