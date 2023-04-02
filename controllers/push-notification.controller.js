@@ -56,9 +56,19 @@ exports.SendNotificationToDevice= (req,res,next)=>{
 }
 
  exports.sendSpecificNotificationBasedOnOrderStatus = (id, status) => {
+     let notification
+     if(status === "In Approval"){
+        notification = "NEW ORDER awaiting approval" 
+     }
+     if(status === "In Processing"){
+        notification = "Your order is in progress" 
+     }
+     if(status === "Completed"){
+         notification = "Your order has been completed"
+     }
     var message={
         app_id: ONE_SIGNAL_CONFIG.APP_ID,
-        contents: {en: `Your Order is in ${status}`},
+        contents: {en: `${notification}`},
         included_segments: ["included_player_ids"],
         include_player_ids: [id],
         content_available: true,
