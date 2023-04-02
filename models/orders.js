@@ -25,6 +25,7 @@ var orderSchema = mongoose.Schema({
         business_name: { type: String },
         qty: { type: Number },
         price: { type: Number },
+        imageUrl: {type: String}
       }),
     },
   ],
