@@ -36,7 +36,7 @@ router.post("/", async (req, res) => {
     });
     console.log({order})
     order = await order.save();
-    pushNotificationController.sendSpecificNotificationBasedOnOrderStatus(req.body.NotifToken, "Approval")
+    pushNotificationController.sendSpecificNotificationBasedOnOrderStatus(req.body.NotifToken, "In Approval")
     return res.status(200).send({
       message: "Order created Successfully",
       Order: order,
@@ -115,6 +115,7 @@ router.put("/:id", async (req, res) => {
     },
     { $set: { "status": req.body.status } }
   );
+  console.log({status: req.body.status})
   pushNotificationController.sendSpecificNotificationBasedOnOrderStatus(order.NotifToken, req.body.status)
 
   return res.send(order);
