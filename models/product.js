@@ -13,6 +13,7 @@ var productSchema = mongoose.Schema({
     type: Number,
     default: null,
   },
+  duration: Number,
   description: String,
   images: [String],
   videos: [String],
