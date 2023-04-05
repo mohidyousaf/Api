@@ -74,12 +74,12 @@ router.post("/", async (req, res, next) => {
   }
 });
 //Update User by ID
-router.put("/", [auth], async (req, res, next) => {
+router.put("/:id", async (req, res, next) => {
   try {
     const { error } = validateUpdate(req.body);
     if (error) return res.status(400).send(error.details[0].message);
     let users = await User.findOneAndUpdate(
-      { _id: req.user._id },
+      { _id: req.params.id },
       _.pick(req.body, ["name", "email", "number", "location", "locationDesc"]),
       { new: true }
     );
